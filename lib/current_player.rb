@@ -10,9 +10,5 @@ end
 end
 
 def current_player(board)
-  if(turn_count%2 == 0)
-    "X"
-  elsif(turn_count %2 ==1)
-    "O"
-  end
+  turn_count(board) % 2 == 0 ? "X" : "O"
 end
